@@ -1,0 +1,25 @@
+# Local .terraform directories (Chứa các provider plugin tải về, rất nặng)
+**/.terraform/*
+
+# Các file phân tách và biến cấu hình chứa thông tin nhạy cảm
+# Bạn giữ file này ở máy local, không đẩy lên Github để lộ email/cấu hình cá nhân
+*.tfvars
+*.tfvars.json
+
+# Các file lưu trạng thái hạ tầng của Terraform (State files)
+# Các file này chứa toàn bộ thông tin tài nguyên, đôi khi có cả mật khẩu clear-text
+*.tfstate
+*.tfstate.*
+
+# Crash logs của Terraform
+crash.log
+crash.*.log
+
+# Các file sinh ra khi thực hiện lệnh terraform plan
+*.tfplan
+
+# Bỏ qua các file cấu hình ẩn của hệ điều hành hoặc editor (Tùy chọn)
+.DS_Store
+.idea/
+.vscode/
+*.log
